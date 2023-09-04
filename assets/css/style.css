@@ -1,0 +1,468 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     html {
+        scroll-behavior: smooth;
+    }
+     
+    .container {
+        color: rgb(163, 45, 45)
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+    
+    header.fixed {
+        padding: 0;
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        background: #fff;
+    }
+    
+    .menu {
+        padding-top: 0px 25px;
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        margin-left: 30px;
+        padding: 22px 0;
+    }
+    
+    .lorem {
+        display: flex;
+        gap: 20px;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .menu li a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .menu li a:hover {
+        color: #480caa;
+    }
+    
+    .main-menu {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .main-menu>li {
+        display: inline-block;
+        padding: 0 22px;
+        position: relative;
+        margin-bottom: 0;
+    }
+    /* sub menu */
+    
+    .sub-menu {
+        position: absolute;
+        width: 200px;
+        left: 0;
+        top: 100%;
+        padding: 12px;
+        background-color: white;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition-duration: 0.3s;
+        z-index: 9;
+    }
+    
+    .sub-menu li {
+        display: block;
+        padding: 5px 15px;
+        border-bottom: #e9e6e7 1px solid;
+    }
+    
+    .sub-menu li:last-child {
+        border-bottom: 0;
+    }
+    
+    .main-menu li:hover>.sub-menu {
+        transform: scaleY(1);
+        transition-duration: 0.3s;
+    }
+    
+    .icon {
+        display: flex;
+        gap: 30px;
+        padding: 20px 0;
+        font-size: 22px;
+    }
+    /* banner */
+    
+    .box {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    .box h1 {
+        width: 400px;
+        font-weight: 900;
+        font-size: 70px;
+        padding-top: 200px;
+        font-style: normal;
+    }
+    
+    .box-one {
+        color: rgb(31, 27, 27);
+    }
+    
+    .box-two {
+        /* padding-left: 450px; */
+        position: absolute;
+        top: -1%;
+        right: 0;
+    }
+    
+    .banner {
+        position: relative;
+        background-color: rgb(224, 193, 181);
+        height: 700px;
+    }
+    
+    .video {
+        padding-top: 250px;
+    }
+    
+    .tree {
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        width: 100px;
+    }
+    
+    .shop-now {
+        background-color: rgb(163, 45, 45);
+        color: white;
+        padding: 10px 40px;
+        border-radius: 33px;
+        border: solid 1px white;
+        font-size: 20px;
+    }
+    
+    .box p {
+        color: black;
+    }
+    /* category */
+    
+    .about-sec {
+        padding: 50px 0px;
+    }
+    
+    .about {
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+    
+    .price {
+        background-color: #c7a598;
+        padding: 10px;
+    }
+    
+    .content h2 {
+        color: black;
+        font-size: 600;
+        font-weight: bold;
+    }
+    
+    .content p {
+        color: rgb(14, 5, 5);
+        padding-bottom: 20px;
+    }
+    
+    .flower-content {
+        padding-right: 50px;
+    }
+    
+    .flower-content h4 {
+        color: black;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .flower {
+        text-align: center;
+        background-color: antiquewhite;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        padding: 13px;
+    }
+    
+    .flower:hover {
+        background-color: #e1870f;
+    }
+    
+    .category-img {
+        position: relative;
+        height: 400px;
+        margin-top: 50px;
+    }
+    
+    .category-img .honey {
+        height: 520px;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+    
+    @media(max-width:768px) {
+        .box {
+            margin-bottom: 15px;
+        }
+    }
+    /* fresh honey one */
+    
+    .banner-one {
+        background-color: rgb(224, 193, 181);
+        padding: 80px 0 50px;
+    }
+    
+    .amount {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .about-img {
+        height: 350px;
+        width: 270px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    
+    .about-head {
+        text-align: center;
+        font-weight: bold;
+        font-style: inherit;
+        padding-bottom: 30px;
+    }
+    
+    .about-head p {
+        font-size: x-large;
+        color: black;
+    }
+    
+    .about-fresh {
+        color: rgb(163, 45, 45)
+    }
+    
+    .about-head h1 {
+        color: black;
+        font-weight: 900;
+        padding-bottom: 30px;
+    }
+    
+    .price h5 {
+        color: black;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .amt {
+        color: rgb(104, 89, 89);
+        text-decoration: line-through;
+    }
+    
+    .ratting {
+        color: yellow;
+    }
+    /* sun flower orginal honey */
+    
+    .sunflower {
+        height: 700px;
+        padding: 0;
+    }
+    
+    .sun-one h3 {
+        padding: 50px;
+    }
+    
+    .honey-one {
+        color: black;
+        font-weight: 900;
+        padding-top: 60px;
+    }
+    
+    .honey-two {
+        color: black;
+        font-weight: 900;
+    }
+    /* sale item */
+    
+    .banner-two {
+        background-color: rgb(224, 193, 181);
+        padding: 50px 0;
+    }
+    /* latest project*/
+    
+    .Latest {
+        padding: 50px 0;
+    }
+    
+    .latest-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .view {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    /* shiping */
+    
+    .banner-three {
+        background-color: rgb(224, 193, 181);
+        height: 300px;
+    }
+    
+    .book {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .phone {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .book h4 {
+        color: black;
+    }
+    
+    .ship {
+        font-size: 40px;
+    }
+
+
+/* form */
+
+.location i 
+{
+    font-size: 20px;
+    color: #a32d2d;
+    display: inline-block;
+    margin-right: 25px;
+}
+.form
+{
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.form h5
+{
+    color:black;
+    font-weight: bold;
+}
+
+.form h2{
+    color:black;
+    font-weight: bold;
+}
+
+.login-form
+{
+    
+    color: black;
+    padding-top: 30px;
+}
+form
+{
+    padding: 10px;
+}
+
+input{
+    margin-bottom: 25px;
+    background-color: #f8c4c4;
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    
+}
+.login-form h2
+{
+    margin-left: 50px;
+}
+.login-form .send
+{
+    background-color: rgb(163, 45, 45);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 33px;
+        border: solid 1px white;
+        font-size: 20px;
+        margin-left: 50px;   
+}
+
+
+
+
+
+
+    /* footer */
+    
+    .email {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    footer {
+        background-color: rgb(218, 208, 208);
+        color: white;
+        padding: 50px 0 20px;
+    }
+    
+    footer p {
+        color: black;
+    }
+    
+    .copy {
+        background-color: rgb(48, 41, 41);
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .copy p {
+        margin-bottom: 0;
+    }
+    
+    .offer {
+        padding: 80px 0;
+    }
+    
+    .Sunflower {
+        text-align: center;
+        position: relative;
+    }
+    
+    .Sunflower img {
+        max-width: 350px;
+    }
+    
+    .borders {
+        width: 200px;
+        height: 350px;
+        border: solid 5px #a32d2d;
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        z-index: -1;
+    }
